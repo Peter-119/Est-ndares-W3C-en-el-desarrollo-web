@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial;
+            background-color: #e6e6e6;
+            border: 2px solid gray;
+            padding: 10px;
+        }
+
+        .contenedor {
+ display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    min-height: 100vh;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        nav {
+            background-color: #cccc66;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        nav ol {
+            display: flex;
+            gap: 30px;
+        }
+
+        .contenido {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+        }
+
+        aside {
+            background-color: #c8d6a5;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        section {
+    background-color: #e6caca;
+    border: 1px solid gray;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+        }
+
+        article {
+    background-color: #91b4e8;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 0;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #c9b28b;
+            border: 1px solid gray;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="contenedor">
+
+        <header>
+            <h1>Conozcamos Ecuador y su belleza escondida</h1>
+        </header>
+
+        <nav>
+            <ol>
+                <li><a href="articulos.html">Articulos</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="sucesos.html">Sucesos</a></li>
+            </ol>
+        </nav>
+
+        <div class="contenido">
+
+            <aside>
+                <h3>Informacion</h3>
+                <p>Bienvenidos a mi pagina web.
+                    Aqui encontraremos los mejores paisajes del Pais
+                </p>
+            </aside>
+
+            <section>
+
+                <article>
+                    <h2>Bora Bora</h2>
+                    <p>La reserva natural de machalilla</p>
+
+                    <img src=" Practica 1/imagesdshaj.jpg"
+                         alt="Paisaje de Bora Bora"
+                         title="Observa y disfruta"
+                         width="200">
+                </article>
+
+                <article>
+                    <h2>Bora Bora 2</h2>
+                    <p>Un lugar hermoso para conocer y visitar.</p>
+                </article>
+
+            </section>
+
+        </div>
+
+        <footer>
+            <p>Autor: Jesus David Velez Gomez</p>
+        </footer>
+
+    </main>
+</body>
+</html>

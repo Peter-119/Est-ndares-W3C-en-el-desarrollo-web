@@ -1,91 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Practia 1</title>
-            <style>
-                  .contenedor {
-                        display: grid;
-                        grid-template-rows: auto auto 300px 1fr 1fr auto;
-                        min-height: 100vh;
-                  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
 
-                  .contenido{
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                  }
-                  
-                  header{
-                        background-color: rgb(145, 145, 233);
-                  }
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial;
+            background-color: #e6e6e6;
+            border: 2px solid gray;
+            padding: 10px;
+        }
 
-                  nav{
-                        background-color: #5553;
-                  }
+        .contenedor {
+ display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    min-height: 100vh;
+        }
 
-                  article{
-                        background-color: rgb(230, 182, 147);
-                  }
-                  nav {
-                        background-color: grey;
-                  }
+        header {
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid gray;
+        }
 
-                  section{
-                        padding: auto;
-                        color: rgb(116, 145, 135);
-                        background-color: rgba(247, 187, 187, 0.333);
-                        border: 2px solid #000;
-                  }
+        nav {
+            background-color: #cccc66;
+            padding: 10px;
+            border: 1px solid gray;
+        }
 
-                  body{
-                       border: 2px solid rgb(255, 215, 215) ; 
-                  }
+        nav ol {
+            display: flex;
+            gap: 30px;
+        }
 
-                  footer{
-                        background-color: burlywood;
-                  }
+        .contenido {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+        }
 
-            </style>
+        aside {
+            background-color: #c8d6a5;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        section {
+    background-color: #e6caca;
+    border: 1px solid gray;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+        }
+
+        article {
+    background-color: #91b4e8;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 0;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #c9b28b;
+            border: 1px solid gray;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-      <main class="contenedor">
-            <header>
-                  <h1> <font color="red" face="Arial" size="5"> Esta es mi prueba 1</font></h1>
-            </header>
-            <nav>
-                  <ol>
-                        <li><a href="articulos.html">articulos</a></li>
-                        <li><a href="inicio.html">inicio</a></li>
-                        <li><a href="sucesos.html">sucesos</a></li>
-                  </ol>
-             </nav>
-             <article>
-                  <p> <font color="gray" face="Verdana" size="2">
-                        Jesus David Velez Gomez de<br> Junior Adrian Santana Chavez
-                  </font></p>
-                  <a href="https://www.utm.edu.ec" target="_blank">Utm</a>
-                  <br>
-                  
-                   
-             </article>
-       <div class="contenido">
-                       
-      <section>
-            <h1>bora bora</h1>
-            <p align =center>Isla principal caracterizada por su mar turquesa</p>
-            
-            <img src="imagesdshaj.jpg" alt="parajo colorido" title="parajo"  width="400" height="400">
-      </section> 
-      <section>
-            <h1>bora2 bora</h1>
-            <p align =center>Isla principal caracterizada por su mar turquesa</p>
-      </section> 
-       </div>
-      <footer>
+    <main class="contenedor">
 
-      </footer>
+        <header>
+            <h1>Conozcamos Ecuador y su belleza escondida</h1>
+        </header>
 
-</main>
+        <nav>
+            <ol>
+                <li><a href="articulos.html">Horarios</a></li>
+                <li><a href="inicio.html">Correo</a></li>
+                <li><a href="sucesos.html">Sucesos</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                
+            </ol>
+        </nav>
+
+        <div class="contenido">
+
+            <aside>
+                <h3>Informacion</h3>
+                <p>Bienvenidos a mi pagina web.
+                    Aqui encontraremos los mejores paisajes del Pais
+                </p>
+            </aside>
+
+            <section>
+
+                <article>
+                    <h2>Bora Bora</h2>
+                    <p>La reserva natural de machalilla</p>
+
+                    <img src="images.jpg"
+                         alt="Paisaje de Bora Bora"
+                         title="Imagen de la reserva natural de machalilla"
+                         width="200">
+                </article>
+
+                <article>
+                    <h2>Bora Bora 2</h2>
+                    <p>Un lugar hermoso para conocer y visitar. lA Laguna De Quilotoa</p>
+                    <img src="images20.jpg"
+                         alt="Paisaje de Bora Bora 2"
+                         title="Imagen de la laguna de quilotoa"
+                         width="200">
+                </article>
+
+            </section>
+
+        </div>
+
+        <footer>
+            <p>Autor: Jesus David Velez Gomez</p>
+            <p>Autor: Junior Adrian Santana Chavez</p>
+            <p>Autor: Bruce Yender Velasquez Laz</p>
+        </footer>
+ <script>
+        var nombre = "";
+
+if (nombre == "") {
+    alert("Error: Aun no nos ha proporcionado su nombre");
+} else {
+    alert("Hemos guardado su informacion " + nombre + "!");
+}
+
+var frases = ["Estas listo", "Para", "Ver", "Lo que", "se viene", "Adelante", "VAMOS"];
+
+for (var i = 0; i < 7; i++) {
+    alert(frases[i]);
+}
+
+function multiplicar(p1, p2) {
+    return p1 * p2;
+}
+
+document.getElementById("demo").innerHTML = multiplicar(4, 3);
+    </script>
+    </main>
 </body>
 </html>

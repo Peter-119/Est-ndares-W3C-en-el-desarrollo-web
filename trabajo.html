@@ -89,9 +89,11 @@
 
         <nav>
             <ol>
-                <li><a href="articulos.html">Articulos</a></li>
-                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="articulos.html">Horarios</a></li>
+                <li><a href="inicio.html">Correo</a></li>
                 <li><a href="sucesos.html">Sucesos</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                
             </ol>
         </nav>
 
@@ -110,15 +112,19 @@
                     <h2>Bora Bora</h2>
                     <p>La reserva natural de machalilla</p>
 
-                    <img src=" Practica 1/imagesdshaj.jpg"
+                    <img src="images.jpg"
                          alt="Paisaje de Bora Bora"
-                         title="Observa y disfruta"
+                         title="Imagen de la reserva natural de machalilla"
                          width="200">
                 </article>
 
                 <article>
                     <h2>Bora Bora 2</h2>
-                    <p>Un lugar hermoso para conocer y visitar.</p>
+                    <p>Un lugar hermoso para conocer y visitar. lA Laguna De Quilotoa</p>
+                    <img src="images20.jpg"
+                         alt="Paisaje de Bora Bora 2"
+                         title="Imagen de la laguna de quilotoa"
+                         width="200">
                 </article>
 
             </section>
@@ -127,8 +133,30 @@
 
         <footer>
             <p>Autor: Jesus David Velez Gomez</p>
+            <p>Autor: Junior Adrian Santana Chavez</p>
+            <p>Autor: Bruce Yender Velasquez Laz</p>
         </footer>
+ <script>
+        var nombre = "";
 
+if (nombre == "") {
+    alert("Error: Aun no nos ha proporcionado su nombre");
+} else {
+    alert("Hemos guardado su informacion " + nombre + "!");
+}
+
+var frases = ["Estas listo", "Para", "Ver", "Lo que", "se viene", "Adelante", "VAMOS"];
+
+for (var i = 0; i < 7; i++) {
+    alert(frases[i]);
+}
+
+function multiplicar(p1, p2) {
+    return p1 * p2;
+}
+
+document.getElementById("demo").innerHTML = multiplicar(4, 3);
+    </script>
     </main>
 </body>
 </html>
